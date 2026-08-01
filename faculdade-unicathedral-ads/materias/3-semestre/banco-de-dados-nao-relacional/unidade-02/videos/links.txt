@@ -1,0 +1,8 @@
+BDNR U2 P1 - Classificação dos bancos de dados não relacionais
+	https://www.youtube.com/watch?v=bCYHKhN28gU
+
+BDNR U2 P2 - Bancos de dados de chave valor key value stores
+	https://www.youtube.com/watch?v=FObG4O9NDO8
+
+BDNR U2 P3 - Bancos de dados de famílias de colunas wide column stores
+	https://www.youtube.com/watch?v=pw_3qf3hIIs

@@ -1,0 +1,8 @@
+BDNR U1 P1 - História dos bancos de dados não relacionais
+	https://www.youtube.com/watch?v=YtEvj7tXpQY
+
+BDNR U1 P2 - Evolução de Banco de Dados
+	https://www.youtube.com/watch?v=PS1bw5VRNg4
+
+BDNR U1 P3 - Entender as arquiteturas dos Bancos de Dados Centralizados e Distribuídos
+	https://www.youtube.com/watch?v=ZXPxxM3P_Ok

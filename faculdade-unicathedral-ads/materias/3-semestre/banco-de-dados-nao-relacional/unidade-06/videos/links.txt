@@ -1,0 +1,5 @@
+BDNR U6 P1 - Bancos de dados de documentos document stores
+	https://www.youtube.com/watch?v=mRFYrp4_ohM
+
+BDNR U6 P2 - Bancos de dados de grafo graph DBMS
+	https://www.youtube.com/watch?v=puVgW05oYAg

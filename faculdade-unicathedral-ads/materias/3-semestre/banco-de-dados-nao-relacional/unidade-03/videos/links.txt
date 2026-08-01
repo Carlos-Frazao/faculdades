@@ -1,0 +1,8 @@
+BDNR U3 P1 - Bancos de dados de documentos document stores
+	https://www.youtube.com/watch?v=DfqzdXIzbeY
+
+BDNR U3 P2 - Bancos de dados de grafo graph DBMS
+	https://www.youtube.com/watch?v=QZuunSUuDvY
+
+BDNR U3 P3 - Bancos de dados de grafo graph DBMS
+	https://www.youtube.com/watch?v=tHwWR0i18dA
