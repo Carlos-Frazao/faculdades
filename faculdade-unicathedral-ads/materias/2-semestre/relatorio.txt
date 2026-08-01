@@ -1,0 +1,7 @@
+=====2° Semestre=====
+1-Extensionista - Projeto Integrador I: ✅ 9,00
+2-Ética e Legislação em TI:             ✅ 9,50
+3-Introdução a Redes de Computadores:   ✅ 7,50
+4-Banco de Dados I:                     ✅ 9,00
+5-Met. de Trabalhos Acadêmicos:         ✅ 10,00
+6-Programação Web:                      ✅ 9,50
