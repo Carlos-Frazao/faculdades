@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Básico</title>
+</head>
+<body>
+    <form method="post" action="processa.php">
+        <h1>Banco de dados da Escola!</h1><br>
+        <h2>Cadastro de alunos:</h2>
+
+        <!--Cadastro de aluno-->
+        Nome: <input type="text" name="nome" placeholder="Digite o nome"> <br>
+        Email: <input type="email" name="email" placeholder="Digite o email"><p>
+        <input type="submit" name="cadastrar" value="Cadastrar">
+
+        <!--Ao clicar em "Procurar" ele entra no banco de dados ele
+        procura o nome do aluno, fazer msg de erro se não encontrar-->
+        <h2>Procurar aluno:</h2>
+        <input type="search" placeholder="Nome do aluno" value=""><p>
+        <input type="submit" name="procurar" value="Procurar">
+        <!--Fazer com que ao clicar aqui ele liste todos os alunos
+        do banco de dados, todos que estão cadastrado.-->
+
+        <h2>Listar alunos:</h2:><br>
+        <input type="submit" name="listar" value="Listar"><br>
+
+    </form>
+</body>
+</html>
