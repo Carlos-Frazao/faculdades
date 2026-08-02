@@ -1,0 +1,9 @@
+=====4° Semestre=====
+1-Extensionista - Projeto Integrador III:     ✅ 
+2-Desen. de software com metodologias ágeis:  ✅ 0,00
+3-Testes de Software:                         ✅ 0,00
+4-Tópicos Especiais em ADS:                   ✅ 0,00
+5-Programação Orientada a Objetos:            ✅ 0,00
+6-Interface do Usuário:                       ✅ 0,00
+7-Gestão de Infra e Data Centers (EaD):       ✅ 0,00
+8-Inteligência Artificial (EaD):              ✅ 0,00
