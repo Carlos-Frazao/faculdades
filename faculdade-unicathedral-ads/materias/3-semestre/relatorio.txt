@@ -1,0 +1,8 @@
+=====3° Semestre=====
+1-Extensionista - Projeto Integrador II:      ✅ 10,0
+2-Arquitetura e Organização de Computadores:  ✅ 7,00
+3-Banco de Dados II:                          ✅ 9,50
+4-Desenvolvimento de Aplicações Web:          ✅ 9,00
+5-Engenharia de Software:                     ✅ 9,50
+6-Banco de Dados não Relacional:              ✅ 9,50
+7-Segurança em Sistemas Computacionais:       ✅ 9,00
