@@ -1,0 +1,134 @@
+Planejamento
+
+1. Modelagem dos Dados (O Coração)
+Precisamos definir como as informações serão armazenadas. Como você já domina SQL e MySQL, podemos estruturar tabelas que relacionem:
+
+Linhas: Nome e número da rota.
+
+Paradas (Stops): Coordenadas geográficas (lat,long) de cada ponto.
+
+Horários: Tabela de frequências (dias úteis, sábados, domingos).
+
+2. Coleta de Dados (O Desafio Físico)
+Como a prefeitura não disponibiliza os dados digitalmente, o grupo precisará fazer o levantamento:
+
+Mapeamento: Alguém precisará percorrer as rotas ou usar ferramentas para marcar as coordenadas exatas dos pontos.
+
+Digitação: Organizar os horários que hoje só existem fisicamente no terminal.
+
+3. Integração com o Front-end
+Hoje seu projeto está no GitHub Pages (que é estático). Para usar uma base de dados dinâmica:
+
+Poderíamos usar um arquivo JSON robusto (se os dados não mudarem com frequência).
+
+Ou configurar uma API simples em PHP ou Python (que você já conhece) para servir esses dados ao mapa.
+
+Duas maneira de trabalho com o github ou com o wamp serve, a diferença e do ambiente de desenvolvimento e o de produção
+	localhost pode quebrar o código e testar e depois ulpar no git depois apaarecera no git pages
+
+Painel administrativo para seus 10 colegas cadastrarem horários sem mexer no código.
+Cálculo automático de qual ônibus passa mais perto da localização do usuário.
+
+Cálculo automático de qual ônibus passa mais perto da localização do usuário.
+
+
+Grupo de Mapeamento (2-3 pessoas): Ficam responsáveis por desenhar as linhas e gerar esses arquivos de coordenadas.
+
+Grupo de Dados (2-3 pessoas): Coletam os horários no terminal.
+
+Grupo de Dev (Você e mais alguns): Implementam a lógica para o mapa ler esses arquivos e exibir as informações na tela.
+===
+1. Grupo de Pesquisa e Coleta de Dados
+Este grupo é o mais crítico no início. Sua missão é fazer o que o seu coordenador sugeriu:
+
+Levantamento de Dados: Ir ao terminal e aos pontos de ônibus para coletar as rotas, os horários e os pontos de parada. Sem essa
+informação, o projeto não sai do papel.
+
+Pesquisa com a População: Fazer entrevistas rápidas com as pessoas para entender as principais dificuldades delas. Isso vai te
+dar informações valiosas para os artigos e para o site.
+
+O objetivo final deste grupo é entregar uma planilha bem organizada com todos os dados coletados.
+
+2. Grupo de Desenvolvimento
+Este grupo é o responsável pela parte técnica do projeto. Eles vão pegar os dados do primeiro grupo e transformá-los no site.
+
+Desenvolvimento do Site: Usar HTML, CSS e JavaScript para criar as páginas, a interface e a busca.
+
+Integração do Mapa: Usar a API do Google Maps (ou similar) para desenhar as rotas no mapa, como você planejou.
+
+3. Grupo de Comunicação e Conteúdo
+Este grupo cuidaria da parte de escrita e divulgação, o que o seu coordenador mencionou sobre os artigos.
+
+Artigos Científicos: A partir das pesquisas e da experiência do projeto, eles podem escrever os artigos que o Moisés sugeriu.
+
+Conteúdo do Site: Criar textos para a página principal, a seção "Sobre" e os avisos do site.
+
+Divulgação: Pensar em como o site será divulgado para a população (redes sociais, panfletos, etc.).
+
+Sobre a Coleta de Dados
+Você tem razão, a coleta de dados é a base de tudo. Para não se sobrecarregar, você pode começar com um projeto-piloto:
+
+Comece Pequeno: Em vez de tentar mapear todas as linhas da cidade de uma vez, comece com 2 ou 3 linhas mais movimentadas. Isso
+permite que você e sua equipe testem o processo de coleta e desenvolvimento.
+
+Padronize a Coleta: Crie um modelo de ficha ou planilha para a equipe de coleta de dados. Assim, a informação chega de forma
+organizada para a equipe de desenvolvimento.
+
+Com essa estrutura em mente, qual desses grupos você acha que seria o primeiro a ser montado?
+===
+===
+Passo 1: O Mapeamento e a Pesquisa
+Essa é a etapa mais importante. Sem os dados, você não tem projeto.
+
+Identifique as linhas de ônibus: Crie uma lista com todas as linhas de ônibus da sua cidade. Você pode fazer isso observando os ônibus, perguntando em pontos de parada ou checando se há alguma informação em um site da prefeitura ou da empresa.
+
+Mapeie as rotas: Para cada linha, você vai precisar do itinerário. A maneira mais eficaz e confiável é fazer o trajeto do ônibus, anotando as ruas e os pontos de parada em uma folha de papel ou no celular. Para os pontos de parada, anote o nome da rua e se possível uma referência (ex: "em frente à praça central").
+
+Anote os horários: Para cada linha, anote os horários de partida do ponto inicial, tanto nos dias úteis quanto nos finais de semana.
+
+Organize os dados: Crie uma planilha (no Google Sheets, Excel ou até mesmo em um caderno) para organizar todas as informações que você coletou. Colunas sugeridas: "Nome da Linha", "Itinerário de Ida", "Itinerário de Volta", "Horários (dias úteis)", "Horários (fins de semana)", "Observações".
+
+Passo 2: O Planejamento Técnico e o Design
+Com os dados em mãos, é hora de pensar na estrutura do site.
+
+Esboce o layout (Wireframe): Antes de programar, desenhe em um papel como você imagina o site. Onde ficará o mapa? Onde ficarão as informações das rotas? Onde estará a barra de busca? Isso te ajuda a visualizar o projeto.
+
+Escolha as tecnologias: Como falamos, o trio HTML, CSS e JavaScript é a base. Para o mapa, a API do Google Maps ou do OpenStreetMap é a melhor opção. Elas permitem que você adicione um mapa interativo ao seu site e desenhe as rotas sobre ele.
+
+Defina as funcionalidades iniciais: Comece com o básico. Não tente fazer tudo de uma vez. As funcionalidades prioritárias são:
+
+Uma página principal com uma lista de todas as linhas de ônibus.
+
+Uma página individual para cada linha, mostrando o itinerário em texto e o mapa interativo.
+
+Horários de funcionamento.
+
+Escolha um nome e registre um domínio (opcional, mas recomendado): Pense em um nome fácil de lembrar. Por exemplo, "Ônibus [Nome da Sua Cidade]" ou "Rotas [Nome da Sua Cidade]". Você pode registrar um domínio (.com.br) se quiser dar um ar mais profissional ao projeto no futuro.
+
+Passo 3: O Desenvolvimento (A Mão na Massa)
+Agora é a hora de tirar o projeto do papel.
+
+Estrutura o site com HTML: Crie os arquivos HTML para cada página (index.html para a página inicial, rota-linha-X.html para cada linha, etc.). Use as tags básicas para organizar o conteúdo.
+
+Estilize com CSS: Adicione cores, fontes e organize o layout para que o site seja agradável e fácil de usar.
+
+Adicione o mapa com JavaScript: A parte mais legal. Você vai usar a API do Google Maps para adicionar o mapa à sua página. Depois, com base nos dados que você coletou, você usará o JavaScript para desenhar as linhas e marcar os pontos de parada no mapa.
+
+Construa as páginas de rotas: Para cada linha de ônibus que você mapeou, crie uma página com o mapa e as informações detalhadas sobre a rota e horários.
+
+Passo 4: O Lançamento e a Manutenção
+Quando o site estiver pronto, é hora de colocá-lo no ar e trabalhar na divulgação.
+
+Hospede o site: Existem diversas plataformas que oferecem hospedagem gratuita para projetos pequenos, como o GitHub Pages ou o Netlify.
+
+Divulgue o projeto: Compartilhe o link do site nas redes sociais, em grupos da sua cidade no Facebook e WhatsApp, e converse com a imprensa local ou blogs para dar mais visibilidade ao seu projeto.
+
+Mantenha os dados atualizados: A empresa de ônibus pode mudar uma rota ou um horário. Fique atento e atualize o site quando necessário.
+
+A cada etapa, celebre as pequenas conquistas. Lembre-se que o objetivo não é ter o site perfeito no primeiro dia, mas sim criar algo útil que ajude a sua comunidade.
+===
+Front-End	Deixar o site bonito e responsivo (CSS/HTML).	Quem gosta de design.
+Geolocalização	Coletar as coordenadas (lat,long) das rotas em Barra do Garças.	Quem tem facilidade de campo.
+Back-End (O seu CRUD)	Melhorar o sistema de login e a gravação dos dados no banco.	Você e mais 2 colegas.
+Documentação	Escrever o relatório do projeto de extensão (requisitos, testes).
+===

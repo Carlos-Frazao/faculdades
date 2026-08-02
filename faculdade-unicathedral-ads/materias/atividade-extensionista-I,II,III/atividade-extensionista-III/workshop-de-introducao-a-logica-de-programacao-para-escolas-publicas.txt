@@ -1,0 +1,68 @@
+Como isso vira a sua "Entrega":
+A sua oficina se chamaria algo como "Por trás da Tela: Como a Tecnologia e a Segurança Digital Funcionam".
+1. A "Entrega" (Social e Física)
+Entrega Social: Ministrar uma oficina curta (de 2 a 4 horas no total, pode ser em uma única manhã ou tarde) para uma turma de ensino médio em uma escola pública estadual de Barra do Garças.
+
+Entrega Física: Criar uma "Cartilha de Primeiros Passos na Tecnologia" (um documento de umas 4 páginas). Você imprime algumas cópias para os alunos no dia e anexa o arquivo original como o "produto" do seu projeto na Unicathedral.
+
+2. O Tema da Oficina (Mantendo a Simplicidade)
+Para não ter dor de cabeça com infraestrutura (computadores lentos na escola ou falta de internet), escolha algo que rode fácil:
+
+Opção A (HTML/CSS): É imbatível para escolas porque só exige o Bloco de Notas e o navegador. Os alunos ficam muito empolgados ao verem uma página web visual tomando forma rápido.
+
+Opção B (Python): Como a sintaxe é amigável, é ótimo para ensinar lógica básica e fazer pequenos scripts rodarem direto no terminal ou no navegador (usando ferramentas online, se houver internet).
+
+3. O Passo a Passo da Execução
+Passo 1 (Contato): Vá até uma escola próxima, converse com o diretor ou coordenador pedagógico e ofereça essa oficina gratuita para uma turma de 1º ou 2º ano. Diga que é um projeto de extensão universitária. As escolas geralmente adoram e abrem as portas na hora.
+
+Passo 2 (Material): Monte a cartilha com os conceitos básicos e o roteiro do que será feito na aula.
+
+Passo 3 (O Evento): No dia, passe uma lista de presença. Nos últimos 10 minutos, peça para eles responderem um questionário anônimo de 3 perguntinhas de marcar "X" (ex: "Você achou a programação muito difícil?", "Esse minicurso despertou seu interesse pela área de TI?"). Esses dados são a base do seu artigo.
+
+Passo 4 (O Artigo): Você senta e escreve.
+
+4. A Estrutura do Artigo Científico
+O artigo não precisa reinventar a roda, ele será um Relato de Experiência:
+
+Introdução: Fale sobre a importância de introduzir o pensamento computacional no ensino médio.
+
+Metodologia: Descreva como foi criar a cartilha e como você organizou a aula na escola.
+
+Resultados e Discussão: Aqui você coloca os gráficos das respostas do questionário que os alunos preencheram e comenta como foi a recepção deles.
+
+Conclusão: Resuma o impacto positivo que a ação teve.
+
+Dessa forma, você resolve o problema sozinho, faz a entrega exigida e produz um artigo com dados reais, o que os avaliadores adoram.
+
+Qual tecnologia você prefere abordar com o pessoal do ensino médio? Dependendo da sua escolha, a gente já pode começar a estruturar os tópicos dessa cartilha e o roteiro da aula.
+====================================================================================
+Pilar 1:
+Excelente sacada! Eu dei uma olhada nos seus arquivos e entendi perfeitamente o que você fez. Você pegou o binário compilado (alvo.exe), abriu em um editor hexadecimal e sobrescreveu os bytes da string "ERRO" para "BOM!", gerando o alvo_modificado.exe sem precisar tocar no código-fonte em C++.
+
+Para a molecada do ensino médio, isso é ouro. O tema "Hacker" prende a atenção na hora, e você pode usar isso para ensinar como os computadores funcionam por baixo dos panos.
+
+Como o seu Pilar 1 já está definido (e é muito bom!), podemos construir os outros dois pilares focando em áreas diferentes da tecnologia, mas mantendo essa pegada de "segurança e descoberta".
+(Engenharia Reversa Básica)
+Aqui estão as ideias para fechar os 3 Pilares da sua oficina e da sua cartilha:
+Pilar: O "Hacker" de Programas (Engenharia Reversa Básica)
+O que você vai mostrar: Exatamente o que você fez nos arquivos. Como os programas são lidos pela máquina (Hexadecimal/Binário) e como é possível alterar uma palavra de "ERRO" para "BOM!" se você souber onde procurar.
+
+A lição por trás: Ensinar que o computador só entende números e que todo software compilado tem uma estrutura lógica.
+
+Na prática: Mostrar o dump.hex na tela e executar o antes e o depois.
+=====================================================================================
+Pilar 2:
+Pilar 2: O "Hacker" de Sites (A Ilusão da Web)
+O que você vai mostrar: Como a interface dos sites pode ser manipulada localmente. Você abre uma página de notícias famosa ou um site de banco, clica com o botão direito, vai em "Inspecionar Elemento" e muda o título da notícia ou o saldo da conta ao vivo.
+
+A lição por trás: Introdução super rápida ao HTML e CSS (mostrar que a web é feita de "blocos de montar"). Além disso, serve como conscientização contra Fake News e golpes de Phishing, provando que um "print de tela" não prova nada.
+
+Na prática: Fazer os alunos usarem o "Inspecionar" no navegador para mudar o próprio nome na página do Google ou alterar uma manchete de jornal.
+=====================================================================================
+Pilar 3:
+O que você vai mostrar: Como as senhas são descobertas através de "Força Bruta" (Brute Force). Você pode fazer um script minúsculo de 5 linhas em Python (ou C) que tenta adivinhar uma senha numérica de 4 dígitos usando um loop de repetição.
+
+A lição por trás: Introdução à lógica de programação (Estruturas de Repetição/Loops). Ao mesmo tempo, mostra a importância matemática de ter senhas longas e com caracteres especiais, já que o computador testa milhares de combinações por segundo.
+
+Na prática: Rodar o script ao vivo no terminal e mostrar ele "quebrando" uma senha fácil em milissegundos, e depois mostrar ele travando/demorando para quebrar uma senha de 8 caracteres mistos.
+=====================================================================================
