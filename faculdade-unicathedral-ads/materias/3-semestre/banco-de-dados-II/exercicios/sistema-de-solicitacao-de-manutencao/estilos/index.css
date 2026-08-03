@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+}
+.container {
+    width: 100%; /*Largura do container de 80%*/
+    height: 100%vh; /*Altura do container de 100%*/
+    margin: auto; /*Centralizar verticalmente*/
+}
+
+header, footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center; /*Centraliza o rodapé e o cabeçalho no centro */
+}
+
+nav {
+    background: #555;
+    text-align: center; /*Centralizar o menu no centro*/
+    padding: 10px;
+
+}
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 15px;
+    background: #f2f4f2;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: #9bfaada5;
+    box-shadow: 2px 3px 4px black; 
+}
+main {
+    background: #eee;
+    padding: 65px;    
+    text-align: center;
+   
+}
+.nav_cadastro {
+    background: #555;
+    text-align: center; /*Centralizar o menu no centro*/
+    padding: 10px;
+}
+form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+form h2 {
+    margin: 5px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+a {
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 6px 13px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/*Gambambiaara para descer o footer/rodapé_cadastro  */
+.rodape_cadastro {
+    background: #333;
+    color: white;
+    padding: 0;
+    margin : 0;
+    text-align: center; /*Centraliza o rodapé e o cabeçalho no centro */
+}
