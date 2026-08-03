@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgb(34, 151, 205);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cadastro {
+    background: rgb(252, 248, 248);
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    display: flex; /* Define o contêiner como flexível */
+    flex-direction: column; /* Organiza os itens em coluna */
+    padding: 30px ;
+}
+
+h2 {
+    color: rgb(10, 10, 10);
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 8px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    background: rgb(131, 242, 123);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(34, 151, 205);
+}
+
+button:hover {
+    background: rgb(51, 242, 51);
+}

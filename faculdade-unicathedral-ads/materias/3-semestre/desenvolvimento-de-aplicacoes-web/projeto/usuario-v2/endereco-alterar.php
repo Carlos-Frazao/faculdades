@@ -12,7 +12,7 @@ $linha = mysqli_fetch_assoc($resultado);
 	<head>
 		<title>Login</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="estilo.css">
+		<link rel="stylesheet" href="style_endereco.css">
 	</head>
 	<body>
 

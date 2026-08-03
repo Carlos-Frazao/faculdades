@@ -1,0 +1,39 @@
+body {
+    background: rgb(85, 88, 83);
+
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    background: rgb(7, 7, 7);
+    color: white;
+    padding: 20px;
+    align-items: center ;
+}
+main {
+    background: rgb(93, 90, 90);
+    color: rgb(6, 6, 6);
+    padding: 10px;
+    min-height: 390px;
+}
+
+nav {
+    background: #f9f7f7;
+    color: rgb(6, 6, 6);
+    padding: 3px;
+    align-items: center ;
+	display: flex;
+	justify-content: center;
+}
+
+footer {
+    background: black;
+    color: rgb(236, 27, 27);
+    text-align: center;
+    padding: 5px;
+}

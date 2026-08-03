@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Controle de Cadastro de Contatos</title>
+    <style>
+        h1 {
+            font-size: 20px;
+           font-weight: bold;
+        }
+    </style>
+    <!--Vamos colocar o CSS AQUI-->
+</head>
+<body>
+    <div class="minha-imagem"></div>
+    <div class="caixa">
+        <form action="cadastro.php" method="POST">
+            <h1>Cadastro de Contatos</h1>
+            
+            <div class="entrada">
+               <h1>Nome:</h1> <input type="text" id="nome" name="nome"><p></p> <!---->
+               <h1>Email:</h1> <input type="text" id="email" name="email"><p></p>
+                <h1>Telefone:</h1> <input type="text" id="telefone" name="telefone"><p></p>
+            </div>
+            <input type="submit" value="Cadastrar Contato">
+        </form>
+    </div>
+</body>
+</html>

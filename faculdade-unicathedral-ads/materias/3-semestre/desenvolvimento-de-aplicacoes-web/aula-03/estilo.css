@@ -1,0 +1,21 @@
+body {
+    background: #4c0677;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caixa {
+   background-color: #fff;
+   width: 20%;
+   min-width: 200px; 
+   padding: 60px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 10px;
+   box-shadow: 0 0 12.px 8px #222;
+}
+.caixa input {
+    position: relative;
+    margin: 5px 0 20px 0;
+}

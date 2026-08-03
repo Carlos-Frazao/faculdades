@@ -1,0 +1,50 @@
+body {
+    background: rgb(255, 0, 212);
+}
+
+.caixa {
+    /* Fazer uma caixa centralizada */
+    padding: 30px 20px; /* Função de preenchimento (cima, baixo; esquerda, direita) */
+    margin: 180px auto; /* Função de margem (cima, baixo; esquerda, direita) */
+    min-height: auto; /* Altura mínima da caixa */
+    background: white; /* Cor de fundo */
+    width: 200px; /* Largura da caixa */
+    height: 200px; /* Altura da caixa */
+    border-radius: 10px; /* Arredondamento das bordas */
+}
+
+a {
+    /* Aqui vai ser o botão elegante do josiel*/
+    display: block; /* Exibir como bloco */
+    width: 100%; /* Largura total do elemento pai */
+    /* Quando o mouse passar por cima */
+    text-align: center; /* Centralizar o texto */
+    text-decoration: none; /* Remover sublinhado */
+    border-radius: 5px; /* Arredondamento das bordas */
+    color:black;
+    box-shadow: 5px 5px 5px; /* Sombra para dar profundidade */
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+button {
+    text-align: center;
+    /* Estilização do botão */
+    background: #f987f7; /* Cor de fundo */
+    color: rgb(2, 2, 2); /* Cor do texto */
+    border: none; /* Remover borda */
+    padding: 10px 20px; /* Preenchimento interno */
+    border-radius: 5px; /* Arredondamento das bordas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background 0.3s; /* Transição suave para a cor de fundo */
+}
+
+/* Efeito de hover para o botão */
+button:hover {
+    background: #d306bb; /* Cor de fundo ao passar o mouse */
+}

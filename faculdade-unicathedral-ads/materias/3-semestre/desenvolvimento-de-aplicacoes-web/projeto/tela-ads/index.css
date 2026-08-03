@@ -1,0 +1,53 @@
+
+
+.cabeca {
+	background: red;
+}
+
+.mae {
+	justify-content: center;
+	display: flex;
+}
+.filho {
+	border: 1px solid black;
+	border-radius: 12px;
+	width: 300px;
+	height: 200px;
+	color: black;
+	margin: 30px;
+	background: white;
+	font-family: arial;
+	align-itens: center;
+	justify-content: center;
+	text-align: center;
+}
+
+button {
+	color: black;
+	background: blue;
+	border-radius: 12px;
+}
+.caixa {
+	text-align: center;
+	background: #5391c7;
+	width: 400px;
+	height: 300px;
+	border-radius: 40px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	box-shadow: 18px 15px 30px rgba(0,0,0,0.821); /*criação da sombra */
+	color: white;
+	font-weight: bold;
+	font-family: arial;
+	
+}
+
+/*body {
+	background: red;
+}
+*/
+
+.roda_o_pe_do_josiel {
+	background: pink;
+}

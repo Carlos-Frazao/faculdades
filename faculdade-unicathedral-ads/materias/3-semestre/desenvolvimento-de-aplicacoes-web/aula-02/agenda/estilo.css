@@ -1,0 +1,53 @@
+body {
+	background: linear-gradient(175deg,#2c3e50,#2c3e50);
+	align-items: center; /* trabalha o alinhamento vertical */
+	justify-content: center; /* trabalha o alinhamento horizontal */
+	display: flex; /* ativa o flexbox, sistema de alinhamento */
+}
+.caixa{
+	background: #5391c7;
+	width: 400px;
+	height: 300px;
+	border-radius: 40px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	box-shadow: 18px 15px 30px rgba(0,0,0,0.821); /*criação da sombra */
+	color: white;
+	font-weight: bold;
+	font-family: arial;
+	
+}
+.entrada{
+	position: relative;
+	margin-bottom: 20px;
+	text-align: right
+	
+}
+.entrada input{
+	padding: 5px;
+	border: 1px solid gray;
+	border-radius: 20px;
+	
+}
+.entrada input:focus {
+	background: #e6ffff;
+	border: 1.8px solid white;
+	outline: none;
+}
+.processar button {
+	width: 100%;
+	padding: 5px;
+	border-radius: 20px;
+	box-shadow: 4px 6px 7px rgba(0,0,0,0.8);
+	outline: none;
+	border: 0;
+	background: #575a5b;
+	color: white;
+	font-weight: bold;
+	font-family: arial;
+}
+h1{
+	text-align: center;
+	margin-top: 10px;
+}

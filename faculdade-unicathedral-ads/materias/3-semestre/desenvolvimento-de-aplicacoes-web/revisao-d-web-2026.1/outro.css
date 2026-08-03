@@ -1,0 +1,33 @@
+header {
+    background: blue;
+    display: flex; /* Usar flexbox para layout */
+    align-items: center; /* Alinhar itens verticalmente */
+    justify-content: center; /* Espaçar itens horizontalmente */
+    padding: 20px 10px; /* Preenchimento interno */
+    
+    
+}
+
+nav {
+    background: red;
+    display: flex; /* Usar flexbox para layout */
+    gap: 15px; /* Espaçamento entre os links */
+}
+
+main {
+    background: green;
+    padding: 20px; /* Preenchimento interno */
+    background: #f0f0f0; /* Cor de fundo */
+    min-height: 400px; /* Altura mínima do conteúdo */
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center; /* Centralizar o texto */
+    width: 92%; /* Largura total */    
+    height: 20px;
+    padding: 60px; /* Preenchimento interno */
+    background: #333; /* Cor de fundo */
+    color: white; /* Cor do texto */
+}
