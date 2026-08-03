@@ -1,0 +1,29 @@
+﻿<html>
+    <head>
+        <title> Login </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css" />
+    </head>
+    <body>
+        <div class="caixa">
+            <h1>Login</h1>
+
+            <!--
+                Envia os dados para login.php usando POST.
+                Esse arquivo PHP valida no banco e cria a sessao.
+            -->
+            <form method="post" action="login.php">
+                <label>E-Mail</label>
+                <input type="email" name="email" required>
+
+                <label>Senha</label>
+                <input type="password" name="senha" required>
+
+                <button type="submit">Entrar no sistema</button>
+            </form>
+
+            <!-- Link para criar novo usuario -->
+            <a href="cadastro.html">Criar Conta</a>
+        </div>
+    </body>
+</html>

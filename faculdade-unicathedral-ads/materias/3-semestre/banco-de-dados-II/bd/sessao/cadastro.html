@@ -1,0 +1,29 @@
+﻿<html>
+    <head>
+        <title>Cadastro de Usuario</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <div class="caixa">
+            <h1>Cadastro</h1>
+
+            <!--
+                Este formulario envia os dados para cadastro.php,
+                que grava o novo usuario no banco.
+            -->
+            <form method="post" action="cadastro.php">
+                <label>Nome</label>
+                <input type="text" name="nome" required>
+
+                <label>E-mail</label>
+                <input type="email" name="email" required>
+
+                <label>Senha</label>
+                <input type="password" name="senha" required>
+
+                <button type="submit">Criar conta</button>
+            </form>
+        </div>
+    </body>
+</html>
