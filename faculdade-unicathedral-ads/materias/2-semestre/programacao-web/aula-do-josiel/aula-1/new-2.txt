@@ -1,0 +1,8 @@
+<HTML> 
+	<HEAD>
+	    <ITTLE> Venda Parcelada </TITLE>
+		<META charset="UTF-8">
+	</HEAD> 
+	<BODY>
+			<FORM method="POST" action="soma.php">
+			 Valor da compra<input type="text" name="
