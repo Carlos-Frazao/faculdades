@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD V2 - API Desacoplada</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        form { margin-bottom: 20px; padding: 15px; background: #f9f9f9; border: 1px solid #ddd; }
+        input { padding: 5px; margin-right: 10px; }
+        button { padding: 6px 12px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>Cadastrar Novo Usuário (Front-end)</h2>
+    
+    <form id="formUsuario">
+        <input type="hidden" id="userId"> <label>Nome:</label>
+        <input type="text" id="nome" required>
+        
+        <label>E-mail:</label>
+        <input type="email" id="email" required>
+        
+        <button type="submit" id="btnSalvar">Salvar na API</button>
+    </form>
+
+    <hr>
+
+    <h2>Lista de Usuários</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaUsuarios">
+            </tbody>
+    </table>
+
+    <script>
+        // O endereço da nossa API no back-end
+        const API_URL = 'http://localhost:3000/usuarios';
+
+        // --- 1. LER (READ) ---
+        // Busca os usuários na API e desenha a tabela
+        async function carregarUsuarios() {
+            const resposta = await fetch(API_URL);
+            const usuarios = await resposta.json();
+            
+            const tbody = document.getElementById('tabelaUsuarios');
+            tbody.innerHTML = ''; // Limpa a tabela antes de desenhar
+            
+            usuarios.forEach(user => {
+                tbody.innerHTML += `
+                    <tr>
+                        <td>${user.id}</td>
+                        <td>${user.nome}</td>
+                        <td>${user.email}</td>
+                        <td>
+                            <button onclick="prepararEdicao(${user.id}, '${user.nome}', '${user.email}')">Editar</button>
+                            <button onclick="deletarUsuario(${user.id})">Deletar</button>
+                        </td>
+                    </tr>
+                `;
+            });
+        }
+
+        // --- 2. CRIAR (CREATE) OU ATUALIZAR (UPDATE) ---
+        document.getElementById('formUsuario').addEventListener('submit', async (e) => {
+            e.preventDefault(); // Impede a página de recarregar
+            
+            const id = document.getElementById('userId').value;
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            
+            const dados = { nome, email };
+            
+            // Se tem ID, estamos editando (PUT). Se não tem, estamos criando (POST).
+            const metodo = id ? 'PUT' : 'POST';
+            const urlFinal = id ? `${API_URL}/${id}` : API_URL;
+
+            // Envia o pacote JSON para a API
+            await fetch(urlFinal, {
+                method: metodo,
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(dados)
+            });
+
+            // Limpa o formulário e recarrega a tabela atualizada
+            document.getElementById('formUsuario').reset();
+            document.getElementById('userId').value = '';
+            document.getElementById('btnSalvar').innerText = 'Salvar na API';
+            
+            carregarUsuarios();
+        });
+
+        // --- 3. PREPARAR EDIÇÃO ---
+        // Joga os dados da linha da tabela lá para cima no formulário
+        function prepararEdicao(id, nome, email) {
+            document.getElementById('userId').value = id;
+            document.getElementById('nome').value = nome;
+            document.getElementById('email').value = email;
+            document.getElementById('btnSalvar').innerText = 'Atualizar na API';
+        }
+
+        // --- 4. DELETAR (DELETE) ---
+        async function deletarUsuario(id) {
+            if(confirm("Tem certeza que deseja apagar?")) {
+                await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
+                carregarUsuarios();
+            }
+        }
+
+        // Assim que a página abrir, já chama a função para buscar os dados
+        carregarUsuarios();
+    </script>
+</body>
+</html>
