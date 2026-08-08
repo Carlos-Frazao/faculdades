@@ -27,7 +27,7 @@ def substituir_underline_por_hifen(diretorio_base):
     
     # Verifica se a pasta realmente existe antes de tentar rodar
     if not os.path.exists(diretorio_base):
-        print(f"❌ ERRO: A pasta '{diretorio_base}' não foi encontrada!")
+        print(f" ERRO: A pasta '{diretorio_base}' não foi encontrada!")
         return
 
     for root, dirs, files in os.walk(diretorio_base, topdown=False):
@@ -44,7 +44,7 @@ def substituir_underline_por_hifen(diretorio_base):
                 caminho_antigo = os.path.join(root, nome_arquivo)
                 caminho_novo = os.path.join(root, novo_nome)
                 os.rename(caminho_antigo, caminho_novo)
-                print(f"📄 Arquivo: {nome_arquivo}  ->  {novo_nome}")
+                print(f" Arquivo: {nome_arquivo}  ->  {novo_nome}")
 
         # 2. Renomeando as pastas (diretórios)
         for nome_pasta in dirs:
@@ -56,17 +56,17 @@ def substituir_underline_por_hifen(diretorio_base):
                     # Só renomeia se a pasta destino AINDA NÃO existir
                 if not os.path.exists(caminho_novo):
                     os.rename(caminho_antigo, caminho_novo)
-                    print(f"✅ Pasta: {nome_pasta} -> {novo_nome}")
+                    print(f" Pasta: {nome_pasta} -> {novo_nome}")
                 else:
-                    print(f"⚠️ Pulando: A pasta '{novo_nome}' já existe!")
+                    print(f" Pulando: A pasta '{novo_nome}' já existe!")
                 
-    print("\n✅ Padronização concluída com sucesso!")
+    print("\n Padronização concluída com sucesso!")
 
-# 🎯 MÁGICA DO CAMINHO: Descobre exatamente onde este arquivo .py está salvo
+# Descobre exatamente onde este arquivo .py está salvo
 diretorio_do_script = os.path.dirname(os.path.abspath(__file__))
 
 # Como o script já está dentro da pasta 'algoritmo-e-logica-de-programacao', 
 # nós só precisamos juntar ele com o nome da pasta alvo que está ao lado dele.
-caminho_alvo = os.path.join(diretorio_do_script, 'faculdade-unicathedral-ads/materias/Atividade Extensionista I, II, III e IV/')
+caminho_alvo = os.path.join(diretorio_do_script, 'faculdade-ufmt-cc/materias/')
 
 substituir_underline_por_hifen(caminho_alvo)
